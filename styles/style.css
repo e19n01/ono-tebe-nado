@@ -1,15 +1,97 @@
 /* место для вашего кода */
 
 .header {
-    display: flex;
-    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr 110px 1fr;
+    align-items: center;
+    /* text-transform: uppercase; */
+    max-width: 1052px;
+    padding: 92px 24px 24px;
 }
 
-.cover {
-    padding: 165px 50px 50 px;
-    background-color: aquamarine;
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    
+    /* gap: 22px; */
+}
+
+.header__menu-item_not_active {
+    list-style: none;
+    margin-left: 26px;
+    padding-right: 26.52px;
+}
+
+.header__menu-item_active {
+    padding-right: 32px;
+    text-underline-offset: 4px;
+}
+
+.header__menu-list {
+    display: flex;
+    /* align-items: stretch; */
+    list-style: circle;
+    /* nav-left: 13px;
+    nav-right: 11px; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* padding-right: 26.52px; */
+}
+
+.header__menu-item {
+    /* display: flex;
+    flex-direction: column; */
+    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    /* justify-content: flex-start;
+    align-items: center; */
+    /* padding: 92px 24px 24px;
+    text-transform: uppercase; */
+}
+
+.header__menu-link {
+    display: flex;
+    flex-direction: column;
+    /* list-style: circle; */
+    /* gap: 2px; */
+    /* padding-right: 26.52px; */
 }
 
 .header__logo-image {
-
+width: 148px;
+height: 105px;
+border-left: 478px;
 }
+
+.header__adress {
+    display: flex;
+    
+    /* flex-direction: row;
+    align-items: end; */
+}
+
+.header__adress-item {
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    min-width: 240px;
+    padding-left: 185px;
+    margin-right: 26px;
+    /* justify-content: end;
+    align-items: end; */
+}
+
+/* .cover {
+    padding: 165px 50px 50 px;
+    background-color: aquamarine;
+} */
