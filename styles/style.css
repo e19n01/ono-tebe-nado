@@ -2,34 +2,25 @@
 
 .header {
     display: grid;
-    grid-template-columns: 1fr 110px 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 148px 1fr;
+    justify-content: flex-start;
     align-items: center;
     max-width: 1100px;
-    padding: 92px 24px 0 24px;
-    margin-bottom: 96px;
+    padding: 93px 24px 0 24px;
+    margin-bottom: 92px;
 }
 
 .header__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: first baseline;
-    align-items: center;
-}
-
-.header__menu-item_not_active {
-    list-style: none;
-    /* margin-left: 26px; */
-    padding-right: 26.52px;
-}
-
-.header__menu-item_active {
-    padding-right: 32px;
-    text-underline-offset: 4px;
+    padding-left: 26.52px;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: first baseline;
+    align-items: center; */
 }
 
 .header__menu-list {
     display: flex;
+    gap: 32px;
     list-style: circle;
     /* nav-left: 13px;
     nav-right: 11px; */
@@ -46,6 +37,20 @@
     letter-spacing: 0.18px;
 }
 
+.header__menu-item_not_active {
+    list-style: none;
+    /* margin-left: 26px; */
+    /* padding-right: 26.52px; */
+}
+
+.header__menu-item_active {
+    display: flex;
+    /* flex-direction: column; */
+    /* gap: 32px; */
+    /* padding-right: 32px; */
+    text-underline-offset: 4px;
+}
+
 .header__menu-link {
     display: flex;
     flex-direction: column;
@@ -54,11 +59,12 @@
 .header__logo-image {
 width: 148px;
 height: 105px;
-border-left: 478px;
+/* border-left: 478px; */
 }
 
 .header__adress {
     display: flex;
+    text-underline-offset: 4px;
 }
 
 .header__adress-item {
@@ -67,7 +73,7 @@ border-left: 478px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 24.3px;
     letter-spacing: 0.18px;
     min-width: 240px;
     padding-left: 185px;
@@ -79,6 +85,8 @@ border-left: 478px;
 .overlay {
     position: absolute;
     inset: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0.6;
     background: #000;
 }
@@ -90,6 +98,7 @@ border-left: 478px;
     width: 1100px;
     padding: 165px 50px 50px;
     background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
 }
@@ -139,18 +148,94 @@ border-left: 478px;
 .cover__description-text {
     font-size: 22px;
     line-height: 28px;
-    word-spacing: .9em;
+    word-spacing: .85em;
     text-transform: uppercase;
+    padding-left: 25.52px;
 }
 
 .bet-button{
-    padding: 12px 32px;
+    padding: 10px 32px;
     background-color: transparent;
     font-family: Raleway;
     font-size: 22px;
-    /* line-height: 28px;
-    word-spacing: .9em; */
+    line-height: 28px;
+    /* word-spacing: .9em; */
     text-transform: uppercase;
     color: currentColor;
     border: 1px solid #FFF;
+}
+
+.lots {
+    padding: 180px 24px 0;
+    
+}
+
+.lots-heading {
+    padding-left: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.lots__card-list {
+    padding: 27px 0 0;
+    display: flex;
+    justify-items: center;
+    gap: 25px;
+}
+
+.lots__card-list-item {
+    list-style: none;
+    width: 334px;
+    min-height: 500px;
+}
+
+.card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 51px 40px 40px;
+    height: 100%;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 26.4px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #FFF;
+    z-index: 1;
+}
+
+.card__text {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%; /* 24px */
+    /* text-decoration: none; */
+    color: #fff;
+    z-index: 1;
 }
