@@ -1,13 +1,13 @@
 /* место для вашего кода */
 
 .header {
+    padding: 93px 24px 0 24px;
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
     justify-content: start;
     align-items: center;
     max-width: 1100px;
-    padding: 93px 24px 0 24px;
-    margin-bottom: 92px;
+    margin-bottom: 94px;
 }
 
 .header__menu {
@@ -42,18 +42,16 @@
     flex-direction: column;
 }
 
+.header__logo {
+    display: flex;
+}
+
 .header__logo-image {
-max-width: 148px;
-height: 105px;
-/* border-left: 478px; */
+    max-width: 148px;
+    height: 105px;
 }
 
 .header__adress {
-    display: flex;
-    text-underline-offset: 4px;
-}
-
-.header__adress-item {
     display: flex;
     flex-direction: column;
     font-size: 18px;
@@ -61,9 +59,15 @@ height: 105px;
     font-weight: 400;
     line-height: 24.3px;
     letter-spacing: 0.18px;
+    text-underline-offset: 4px;
     min-width: 240px;
-    padding-left: 185px;
     margin-right: 26px;
+    
+}
+
+.header__adress-item {
+    padding-left: 185px;
+    list-style: none;
 }
 
 .overlay {
@@ -79,7 +83,7 @@ height: 105px;
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 1100px;
+    max-width: 1100px;
     padding: 165px 50px 50px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -238,7 +242,7 @@ height: 105px;
 .about {
     display: flex;
     max-width: 100%;
-    padding: 148px 24px;
+    padding: 148px 24px 182px;
     background-color: #fff;
     /* margin-bottom: 92px; */
 }
@@ -247,8 +251,6 @@ height: 105px;
     padding: 33px 0 0 47px;
     display: grid;
     grid-template-columns: 310px 1fr;
-    /* grid-template-rows: repeat(4, 1fr); */
-    /* row-gap: 72px; */
 }
 
 .about__logo {
@@ -292,3 +294,107 @@ height: 105px;
 .about__text-spacing {
     padding: 8px 0 24px;
 }
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    padding: 0 50px;
+    margin-bottom: 88px;
+}
+
+.footer__adress-item {
+    list-style: none;
+}
+
+.footer__menu {
+    
+    display: flex;
+    color: #000;
+
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.footer__menu-list {
+    /* display: flex; */
+    /* gap: 32px; */
+    padding-left: 50px;
+    list-style: none;
+}
+
+.footer__social-list {
+    display: flex;
+}
+
+.footer__social-list-item {
+    padding-left: 185px;
+    display: inline-flex;
+    gap: 48px;
+}
+
+.footer__social-link-youtube {
+    /* list-style: none; */
+    background-image: url(../images/yt.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    border-radius: 50%;
+    display: block;
+    height: 48px;
+    /* transition: transform .15s ease-out; */
+    width: 48px;
+    /* border: 48px; */
+}
+
+.footer__social-link-vk {
+    /* list-style: none; */
+    background-image: url(../images/vk.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    border-radius: 50%;
+    display: block;
+    height: 48px;
+    /* transition: transform .15s ease-out; */
+    width: 48px;
+    /* border: 48px; */
+}
+
+.footer__social-link-pinterest {
+    /* list-style: none; */
+    background-image: url(../images/pinterest.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    border-radius: 50%;
+    display: block;
+    height: 48px;
+    /* transition: transform .15s ease-out; */
+    width: 48px;
+    /* border: 48px; */
+}
+
+.footer__social-icon {
+    /* background-image: url(../images/vk.svg); */
+    outline: none;
+    text-decoration: none;
+    touch-action: manipulation;
+    /* cursor: pointer; */
+    /* width:48px;
+    height:48px; */
+    /* border-image: url(../images/vk.svg); */
+    /* border: 1px solid #000; */
+}
+
+/* .footer__social-icon-youtube {
+    outline: none;
+    text-decoration: none;
+    touch-action: manipulation;
+} */
