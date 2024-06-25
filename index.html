@@ -13,13 +13,13 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item_not_active">
-            <a class="header__menu-link">главная</a>
+          <li class="header__menu-item header__links-list-item_no-bullit">
+            <a class="address__menu-link-underline-no" href="#0">главная</a>
           </li>
-          <li class="header__menu-item header__menu-item_active">
+          <li class="header__menu-item header__menu-item-active">
             <a class="header__menu-link" href="#0">посмотреть лоты</a>
           </li>
-          <li class="header__menu-item header__menu-item_active">
+          <li class="header__menu-item header__menu-item-active">
             <a class="header__menu-link" href="#0">об аукционе</a>
           </li>
         </ul>
@@ -31,30 +31,14 @@
           alt="логотип сайта Оно тебе надо"
         />
       </a>
-      <address class="header__adress">
-        <!-- 
-        <p class="header__adress-item">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
-        </p>
-        <p class="header__adress-item">
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        </p>
-        <p class="header__adress-item">наб. Принсенграхт 263-<br>265, Амстердам</p>
-        -->
-        <ul>
-          <li class="header__adress-item">
-            <a href="tel:+99995555555">+9 999 555 5555</a>
-          </li>
-          <li class="header__adress-item">
-            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          </li>
-          <li class="header__adress-item">
-            <a>наб. Принсенграхт 263-<br />265, Амстердам</a>
-          </li>
-        </ul>
+      <address class="address">
+        <a class="header__address" href="tel:+9995555555">+9 999 555 5555</a>
+        <a class="header__address" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="header__address">наб. Принсенграхт 263-<br />265, Амстердам</p>
       </address>
     </header>
-
+    
+  <main>
     <section class="cover">
       <div class="overlay"></div>
       <h1 class="cover__title">
@@ -73,7 +57,7 @@
         <p class="cover__description-text">
           Аукцион вещей, в которые никто не верил
         </p>
-        <button class="bet-button" style="cursor: pointer">
+        <button class="bet-button">
           Сделать ставку
         </button>
       </div>
@@ -135,15 +119,15 @@
     </section>
 
     <section class="about">
-      <header class="about__column">
-        <a class="about__logo">
+      <div class="about__column">
+        <div class="about__logo">
           <img
             class="about__logo-image"
             src="./images/logo-white.svg"
             alt="логотип сайта Оно тебе надо"
           />
-        </a>
-        <h4 class="about__title">Об аукционе</h4>
+        </div>
+        <h2 class="about__title">Об аукционе</h2>
         <p class="about__text about__text-spacing">
           Здесь вы не встретите очередное пафосное собрание невероятно дорогого
           антиквариата. Наши лоты вообще не должны были попасть ни на один
@@ -159,27 +143,20 @@
           представить современную культуру. Когда в эти вещи не верил никто,
           продолжали верить их создатели. И сейчас эти лоты стали культовыми.
         </p>
-      </header>
+      </div>
     </section>
+  </main>
 
     <footer class="footer">
-      <address class="header__adress">
-        <ul>
-          <li class="footer__adress-item">
-            <a href="tel:+9995555555">+9 999 555 5555</a>
-          </li>
-          <li class="footer__adress-item">
-            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          </li>
-          <li class="footer__adress-item">
-            <a>наб. Принсенграхт 263-<br />265, Амстердам</a>
-          </li>
-        </ul>
+      <address class="address">
+        <a class="footer__address" href="tel:+9995555555">+9 999 555 5555</a>
+        <a class="footer__address" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p class="footer__address">наб. Принсенграхт 263-<br />265, Амстердам</p>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__menu-item footer__menu-item_not_active">
-            <a class="footer__menu-link">главная</a>
+          <li class="footer__menu-item">
+            <a class="address__menu-link-underline-no" href="#0">главная</a>
           </li>
           <li class="footer__menu-item footer__menu-item_active">
             <a class="footer__menu-link" href="#0">посмотреть лоты</a>
@@ -189,15 +166,15 @@
           </li>
         </ul>
       </nav>
-      <div class="footer__social-list">
+      <div>
         <ul class="footer__social-list-item">
-          <li class="footer__social-link-youtube" style="cursor: pointer">
+          <li class="footer__social-link footer__social-link-youtube">
             <a class="footer__social-icon" href="https://YouTube.com"></a>
           </li>
-          <li class="footer__social-link-vk" style="cursor: pointer">
+          <li class="footer__social-link footer__social-link-vk">
             <a class="footer__social-icon" href="https://vk.com"></a>
           </li>
-          <li class="footer__social-link-pinterest" style="cursor: pointer">
+          <li class="footer__social-link footer__social-link-pinterest">
             <a class="footer__social-icon" href="https://pinterest.com"></a>
           </li>
         </ul>
