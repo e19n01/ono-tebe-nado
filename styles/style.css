@@ -173,12 +173,14 @@
     display: flex;
     justify-content: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .lots__card-list-item {
     list-style: none;
     width: 334px;
     min-height: 563px;
+    flex-grow: 1;
 }
 
 .card-link {
