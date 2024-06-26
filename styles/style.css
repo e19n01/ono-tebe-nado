@@ -149,7 +149,6 @@
     font-family: Raleway, Arial, Helvetica, Verdana, sans-serif;
     font-size: 22px;
     line-height: 28px;
-    /* word-spacing: .9em; */
     text-transform: uppercase;
     color: currentColor;
     border: 1px solid #FFF;
@@ -157,7 +156,6 @@
 
 .lots {
     padding: 180px 24px 0;
-    
 }
 
 .lots-heading {
@@ -260,6 +258,7 @@
     border-radius: 50%;
     background-color: #000;
 }
+
 .about__logo-image {
     max-width: 148px;
 }
@@ -294,8 +293,7 @@
     grid-template-columns: 1fr 200px 1fr;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1100px;
-    
+    max-width: 1100px;   
 }
 
 .footer__address {
@@ -310,8 +308,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    
+    line-height: normal;   
 }
 
 .footer__menu-list {
@@ -331,7 +328,6 @@
     background-size: 48px;
     border-radius: 50%;
     list-style: none;
-    
 }
 
 .footer__social-link-youtube {
